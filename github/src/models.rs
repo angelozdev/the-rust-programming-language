@@ -2,7 +2,7 @@
 pub struct User {
     pub avatar_url: String,
     pub bio: Option<String>,
-    pub blog: String,
+    pub blog: Option<String>,
     pub company: Option<String>,
     pub created_at: String,
     pub email: Option<String>,
@@ -16,7 +16,7 @@ pub struct User {
     pub hireable: Option<bool>,
     pub html_url: String,
     pub id: i64,
-    pub location: String,
+    pub location: Option<String>,
     pub login: String,
     pub name: Option<String>,
     pub node_id: String,
