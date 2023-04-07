@@ -1,4 +1,4 @@
-use demo::services::user_service;
+use github::services::user_service;
 use std::{env, process};
 
 #[tokio::main]
