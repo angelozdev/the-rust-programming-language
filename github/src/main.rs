@@ -5,7 +5,7 @@ use std::{env, process};
 #[tokio::main]
 async fn main() {
     let username = get_username_from_args();
-    let user = user_service::get(username.as_str()).await;
+    let user = user_service::get_by_username(username.as_str()).await;
 
     if let Some(user) = user {
         let created_at = format_date(&user.created_at);

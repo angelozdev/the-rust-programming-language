@@ -1,7 +1,7 @@
 pub mod user_service {
     use crate::{models::User, services::utils};
 
-    pub async fn get(username: &str) -> Option<User> {
+    pub async fn get_by_username(username: &str) -> Option<User> {
         let url = format!("https://api.github.com/users/{}", username);
         println!("Fetching user from: {}", url);
         let client = reqwest::Client::new();
